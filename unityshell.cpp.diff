@@ -1,0 +1,20 @@
+--- unityshell.cpp.orig	2013-02-09 21:27:31.177189860 -0500
++++ unityshell.cpp	2013-02-09 21:28:07.861190844 -0500
+@@ -3384,7 +3384,8 @@
+ {
+   std::unique_ptr<nux::GestureBroker> gesture_broker(new UnityGestureBroker);
+   wt->GetWindowCompositor().SetGestureBroker(std::move(gesture_broker));
+-
++  
++  /*
+   gestures_sub_launcher_.reset(new nux::GesturesSubscription);
+   gestures_sub_launcher_->SetGestureClasses(nux::DRAG_GESTURE);
+   gestures_sub_launcher_->SetNumTouches(4);
+@@ -3404,6 +3405,7 @@
+   gestures_sub_windows_->SetNumTouches(3);
+   gestures_sub_windows_->SetWindowId(GDK_ROOT_WINDOW());
+   gestures_sub_windows_->Activate();
++  */
+ }
+ 
+ /* Window init */
