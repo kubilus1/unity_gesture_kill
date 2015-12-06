@@ -10,11 +10,11 @@ Build & Install
 
 For now, simply do a
   
-  $ make
-  $ sudo make install
+    $ make
+    $ sudo make install
 
 Cleanup with
   
-  $ make clean
+    $ make clean
 
 Later perhaps I will upload pre-built packages.
